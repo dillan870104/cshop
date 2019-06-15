@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>圓領襯衫</title>
+  <link rel="stylesheet" type="text/css" href="css01.css">
+</head>
+<style>
+.checked {
+  color: orange;
+}
+
+/*Main*/
+.wrap {
+    margin: 0 auto;
+    width: 56.25em;
+}
+ 
+/*mes-board*/
+.mes-board {
+    margin: 1.875em 0;
+    border: 1px solid #aaa;
+    padding: 0 .7em;
+    background-color: #fcf;
+}
+.mes-board li { padding: .7em 0; }
+.mes-board li + li { border-top: 1px dashed #fff; }
+.mes-board h4 {
+    display: inline;
+    margin-right: 2px;
+    font-weight: 400;
+    color: #66f;
+}
+.mes-board small { color: #999; }
+.mes-board p {
+    padding: 1em 0;
+ 
+}
+
+/*mes-send*/
+.mes-send {
+    padding: .65em;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position:relative;
+    top:-400px;
+
+}
+.form-group { padding: 1.25em; }
+.form-group label { vertical-align: top; }
+.mes-send input[type="text"],
+.mes-send textarea {
+    padding: 1px;
+    width: 40%;
+    border: 1px solid #b7b7b7;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.mes-send input { height: 2em; }
+
+</style>
+<body>
+<div id="container">
+    <div id="headbox1">
+      <img class="comp1" src="pic/mark.jpg">
+      <p class="user"><a href="b4shopping_cart.html"><img class="icon_cart" src="pic/icon_cart.png" title="購物車"></a>訪客，您好!<br>
+        <a href="log_in.html"> 登入</a>|<a href="register.html">註冊</a>
+      </p>
+    </div>
+    <div class="headbox2">
+            <div class="navbar">
+      <div class="subnav">
+        <button class="subnavbtn"><a href="b4loghome.html">HOME</a></button>
+      </div>
+      <div class="subnav">
+        <button class="subnavbtn"><a href="b4menc.html">MEN</a></button>
+      </div>
+      <div class="subnav">
+        <button class="subnavbtn"><a href="b4womenc.html">WOMEN</a></button>
+      </div>
+      <div class="subnav">
+        <button class="subnavbtn"><a href="b4sales.html"> ALL</a></button>
+      </div>
+      <div class="subnav">
+        <button class="subnavbtn"><a href="b4about_us.html">ABOUT US</a> </button>
+      </div>
+
+      <div class="subnav">
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="搜尋..">
+            <button type="submit">搜尋</button>
+          </form>
+        </div>
+      </div>
+      </div>
+    </div>
+    
+
+
+
+
+    <div id="sidebar_left"></div>
+    <div id="sidebody">
+      <div class="item">
+        <a href="b4sales.html" style="text-decoration:none;">所有商品 </a> > <a href="b4menc.html" style="text-decoration:none;">男裝</a> > 圓領襯衫
+      </div>
+      <div class="item2">
+        <img id="myImg" src="pic/men/longt4.jfif" title="點我放大" style="width:100%;max-width:400px">
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+      </div>
+      <div class="item3">
+        <table>
+          <caption style="font-weight:bold"><span style="font-size:28px">圓領襯衫</span></caption>
+          <tr>
+            <td><center><img src="icon/list.jpg" width="30px" height="30px"></center></td>
+            <td>&nbsp;商品編號:&nbsp;</td>
+            <td>002</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><center><img src="icon/intro.jpg" width="30px" height="30px"></center></td>
+            <td>&nbsp;商品介紹:&nbsp;</td>
+            <td>產地:台灣<br>亞麻65%、棉35%</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><center><img src="icon/price.jpg" width="30px" height="30px"></center></td>
+            <td>&nbsp;商品單價:&nbsp;</td>
+            <td>250元</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+          <td><center><img src="icon/size.png" width="30px" height="30px"></center></td>
+            <td>&nbsp;商品尺寸:&nbsp;</td>
+            <td><select name="size" style="font-size:20px"><option value="" disabled selected>選擇數量</option>
+            <option value="1">XS</option>
+            <option value="2">S</option>
+            <option value="3">M</option>
+            <option value="4">L</option>
+            <option value="5">XL</option></select></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><center><img src="icon/quantity.jpg" width="30px" height="30px"></center></td>
+            <td>&nbsp;數量:&nbsp;</td>
+            <td><select name="option" style="font-size:20px"><option value="" disabled selected>選擇數量</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option></select></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td>&nbsp;&nbsp;&#9733;</td>
+            <td>&nbsp;我要評分:&nbsp;</td>
+            <td>
+               <select name="point" style="font-size:20px"><option value="" disabled selected>選擇評分</option>
+               <option value="1">1&#9733;</option>
+               <option value="2">2&#9733;</option>
+               <option value="3">3&#9733;</option>
+               <option value="4">4&#9733;</option>
+              <option value="5">5&#9733;</option></select></td>
+            </td>
+          </tr>
+          <tr>                                                                                          <!--這裡-->
+            <td colspan="2"><input type="button" value="加入購物車" class="buttoncar"></td>
+          </tr>
+        </table>
+      </div>
+      
+    </div>                                                           <!--到這裡-->
+
+
+
+
+
+    </div>
+    <div id="sidebar_right"></div>
+    <div id="clear">
+  <section class="mes-send">
+    <form method="post" action="">
+         <div class="form-group">
+            <label for="user_mes">留下評論吧：</label>
+            <textarea id="user_mes" name="user_mes"></textarea>
+         </div>
+         <input type="submit" value="送 出">&nbsp;<input type="reset" value="重 填">
+    </form>
+  </section>
+    </div>
+<footer> 
+  <p class="footword"><img class="comp2" src="pic/mark.jpg">
+  聯絡我們|關於我們|使用條款<br>
+  客服專線:0800-000-123<br>
+  地址: 320桃園市中壢區中北路200號
+ </p>
+</footer>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}  
+
+
+  // Get the modal
+  var modal = document.getElementById('myModal');
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById('myImg');
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+  }
+  // Get the <span> element that closes the modal
+              var span = document.getElementsByClassName("close")[0];
+              // When the user clicks on <span> (x), close the modal
+                          span.onclick = function() {
+                          modal.style.display = "none";
+                          }
+
+
+</script>
+</body>
+</html>
