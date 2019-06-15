@@ -1,0 +1,659 @@
+* {                                   
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          margin:0;   
+}
+
+/*版面格式*/
+#container{
+    width:100%;
+}
+/*版面格式*/
+#headbox1{
+    width:100%;
+    height:160px;
+    margin:0 auto;
+    background-color: black;
+}
+
+p.user a{
+  color: white;
+  text-decoration:none;
+}
+
+/*logo圖*/
+img.comp1{
+    width: 100px;
+    height:100px;   
+    position: relative;
+    top:20px;
+    left: 80px; 
+}
+
+p.user{
+  float: right;
+  color: white;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+img.icon_cart{
+  width:40px;
+  height:40px;
+  float: left;
+  margin-right: 30px;
+
+}
+
+/*版面格式*/
+#headbox2{
+    width:100%;
+    height:444px;
+    margin:0 auto;
+}
+
+
+/* The navigation menu */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.navbar  a {
+  color: white;
+  text-decoration:none;
+}
+
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+
+.subnav .subnavbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 35px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #A79999;
+}
+
+.subnav input[type=text] {
+
+  padding: 12px 14px;
+  border:none;
+  font-size:15px;
+  width: 300px;
+  margin-top: 2px;
+  margin-bottom:1px;
+}
+
+
+.subnav .search-container button {
+  float: right;
+  padding: 11px 14px;
+  border:none;
+  cursor: pointer;
+  font-size: 15px;
+  background: #ddd;
+  margin-top: 2px;
+  margin-bottom:2px;
+}
+
+.subnav .search-container button:hover {
+  background: #ccc;
+}
+
+.subnav .search-container {
+  float: right;
+  padding-left: 200px;
+} 
+
+
+/* Slideshow */
+.slideshow-container {
+  max-width: 60%;
+  height: 400px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -10px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  position: relative;
+  top:-20px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+
+#sidebar_left{
+    width:20%;
+    margin-bottom:5px;
+    float:left;
+}
+#sidebar_right{
+    width:20%;
+    margin-bottom:5px;
+    float:right;
+}
+
+
+
+
+
+#sidebody{
+    width:60%;
+    margin-top:5px;
+    margin-bottom:5px;
+    float: left;
+    
+}
+
+
+.title{
+  display: inline-block;
+  font-size: 24px;
+  vertical-align: middle;
+  margin-left: 10px;
+  padding: 2px;
+}
+/*熱門*/
+.box{
+  display: inline-block;
+  float: left;
+  width: 150px;
+  height:200px;
+  margin: 15px;
+}
+
+.box_pic{
+  width:150px;
+  height:150px;
+}
+
+
+
+
+
+
+#clear{
+  clear:both;
+}
+footer{
+  width:100%;
+  max-width: inherit;
+  margin-top:5px;
+  background-color: #A79999;
+  height: 300px;
+}                                               /*版面格式*/
+
+img.comp2{
+  width: 200px;
+  height:200px;   
+  float: left;
+  margin-right:40px; 
+}
+
+.footword{
+  position: relative;
+  top:50px;
+  left: 350px; 
+  font-size: 30px;
+  width: 50%;
+}
+/*register&login*/
+.reg_input
+{
+padding:5px;
+border:0px;
+border-bottom:solid;
+font-family:Microsoft JhengHei;
+font-size:18px;
+}
+.reg_finish{
+  position:relative;
+  top:-50px;
+  text-align:center;
+  outline-style: solid;
+  outline-color:  #888888;
+  background: #888888;
+}
+
+.log_radio
+{
+margin: 0px 10px;
+}
+
+.login_td_btn
+{
+text-align:center;
+}
+
+.login_btn
+{
+font-size:20px;
+font-family:"微軟正黑體";
+border-radius:18px;
+color:#ffffff;
+background:#9C8B8B;
+padding:10px 10px;
+margin:10px 20px;
+border:0px;
+cursor: pointer;
+}
+
+.login_btn:hover
+{
+  background:#7D6969;
+}
+.login_btnin
+{
+font-size:20px;
+font-family:"微軟正黑體";
+border-radius:18px;
+color:#ffffff;
+background:#9C8B8B;
+padding:20px 20px;
+margin:20px 20px;
+border:1px;
+cursor: pointer;
+}
+
+.login
+{
+font-size:30px;
+margin-top:100px;
+font-family:"微軟正黑體";
+}
+.login_input
+{
+padding:5px;
+border:0px;
+border-bottom:solid;
+font-family:Microsoft JhengHei;
+font-size:18px;
+}
+
+
+.mem_btn {
+  margin: 0 20px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #9C8B8B;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-family: "微軟正黑體";
+  font-weight: bold;
+  cursor: pointer;
+}
+.mem {
+  position: relative;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.mem2 {
+  position: relative;
+  left: 500px;
+  top: 60px;
+}
+
+
+.salesbox{
+  display: inline-block;
+  float: left;
+  width: 200px;
+  height:250px;
+  margin:20px 50px;
+}
+
+.salesbox_pic{
+  width:200px;
+  height:200px;
+}
+.loginposition{
+  position: relative;
+  top:300px;
+}
+
+/*購物車*/
+.car
+{
+margin:5px;
+font-size:21px;
+}
+.car_table
+{
+width:80%;
+font-family:"微軟正黑體";
+}
+.car_tr{
+border-top:solid;
+border-color:#33ccff;
+}
+.car li
+{
+float: none;
+padding:5px 0;
+}
+.car_td
+{
+padding:50px 10px;
+}
+.car_td img{
+opacity:0.8;
+}
+.car_td img:hover{
+opacity:0.6;
+}
+.car_del
+{
+font-size:21px;
+color:#ffffff;
+background-color:#9C8B8B;
+border-radius:20px;
+padding:5px 10px;
+margin-top:10px;
+font-family:"微軟正黑體";
+font-weight:bold;
+}
+.car_del:hover
+{
+background-color:#7D6969;
+color:#ff0000;
+}
+.car_btn
+{
+margin:0 20px;
+font-size:21px;
+color:#ffffff;
+background-color:#9C8B8B;
+border-radius:20px;
+padding:5px 10px;
+font-family:"微軟正黑體";
+font-weight:bold;
+cursor: pointer;
+}
+.car_btn:hover{
+background-color:#7D6969;
+}
+
+/*付費*/
+.car_check_table
+{
+width:50%;
+margin-bottom:20px;
+}
+.car_check_td
+{
+padding:10px 5px;
+width: 50%;
+font-size:25px;
+}
+.car_check_td input{
+font-size:25px;
+}
+#car_check_td1
+{
+padding-left:38%;
+}
+#car_check_td2
+{
+color:red;
+font-weight:bold;
+}
+/*商品單頁*/
+.item2{
+position:relative;
+top:70px;
+left:0px;
+width: 450px;
+height: 450px;
+}
+.item3{
+position:relative;
+top:-430px;
+left:470px;
+font-family:Microsoft JhengHei;
+font-size:23px;
+width:500px;
+}
+.buttoncar{
+width: 200px;
+height: 50px;
+border-radius:20px;
+cursor:pointer;
+background:#9C8B8B;
+font-size:20px;
+padding:10px 10px;
+margin:10px 20px;
+}
+.buttoncar:hover{
+background-color:#7D6969;
+}
+
+.item {
+  position: relative;
+  top: 45px;
+  left: 5px;
+  font-family: Microsoft JhengHei;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#myImg{
+border-radius: 5px;
+cursor: pointer;
+transition: 0.2s;
+}
+#myImg:hover{
+opacity: 0.7;
+box-shadow:2px 2px 12px #ccc;
+}
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (image) */
+.modal-content {
+margin: auto;
+display: block;
+width: 80%;
+max-width: 700px;
+}
+/* Caption of Modal Image */
+#caption {
+margin: auto;
+display: block;
+width: 80%;
+max-width: 700px;
+text-align: center;
+color: #ccc;
+padding: 10px 0;
+height: 150px;
+}
+/* Add Animation */
+.modal-content, #caption {
+-webkit-animation-name: zoom;
+-webkit-animation-duration: 0.6s;
+animation-name: zoom;
+animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+from {-webkit-transform:scale(0)}
+to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+from {transform:scale(0)}
+to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+position: absolute;
+top: 15px;
+right: 35px;
+color: #f1f1f1;
+font-size: 40px;
+font-weight: bold;
+transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+color: #bbb;
+text-decoration: none;
+cursor: pointer;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+.modal-content {
+width: 100%;
+}
+
+.button_s
+{
+font-size:20px;
+font-family:"微軟正黑體";
+border-radius:18px;
+color:#ffffff;
+background:#9C8B8B;
+padding:10px 10px;
+margin:10px 20px;
+border:0px;
+cursor: pointer;
+}
+
+.button_s:hover
+{
+  background:#7D6969;
+}
+.item4{
+width:200px;
+font-size:20px;
+color:black;
+}
+
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+

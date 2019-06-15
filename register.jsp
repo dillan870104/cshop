@@ -1,0 +1,123 @@
+<%@page contentType="text/html" %>
+<%@page import="java.sql.*" %>
+<%@ page language="java" import="java.sql.*" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>C.SHOP服飾精品商城----會員註冊</title>
+  <link rel="stylesheet" type="text/css" href="css01.css">
+</head>
+<body>
+<div id="container">
+    <div id="headbox1">
+      <img class="comp1" src="pic/mark.jpg">
+      <p class="user"><a href="b4shopping_cart.jsp"><img class="icon_cart" src="pic/icon_cart.png" title="購物車"></a>訪客，您好!<br>
+        <a href="log_in.jsp"> 登入</a>|<a href="register.jsp"> 註冊</a>
+      </p>
+    </div>
+    <div class="headbox2">
+      
+    </div>
+    <div id="headbox2">
+      <div class="navbar">
+      <div class="subnav">
+        <button class="subnavbtn"><a href="index.jsp">HOME</a></button>
+      </div>      
+      <div class="subnav">
+        <button class="subnavbtn"><a href="b4menc.jsp">MEN</a></button>
+      </div>
+      <div class="subnav">
+        <button class="subnavbtn"><a href="b4womenc.jsp">WOMEN</a></button>
+      </div>
+      <div class="subnav">
+        <button class="subnavbtn"><a href="b4sales.jsp"> ALL</a></button>
+      </div>
+      <div class="subnav">
+        <button class="subnavbtn"><a href="b4about_us.jsp"> ABOUT US</a></button>
+      </div>
+
+      <div class="subnav">
+        <div class="search-container">
+          <form action="search2.jsp" method="post">
+            <input type="text" name="searching" placeholder="搜尋..">
+            <button type="submit">搜尋</button>
+          </form>
+        </div>
+      </div>
+      </div>
+
+    <div id="sidebar_left"></div>
+    <div id="sidebody">
+    <center>      
+        <form name="login" method="post" action="register2.jsp">
+          <table>
+            <tr>
+              <td><img src="icon/name.jpg" width="60px" height="60px"></td><td>&nbsp;&nbsp;<input type="text" name="cusname" maxlength="40" required class="reg_input" placeholder="&nbsp;姓名"></td>
+            </tr>
+            <tr>
+              <td><img src="icon/gender.jpg" width="60px" height="60px"></td><td>&nbsp;&nbsp;
+                <input type="radio" name="sex" value="男" required class="log_radio">男  
+                <input type="radio" name="sex" value="女" class="log_radio">女
+                <input type="radio" name="sex" value="其他" class="log_radio">其他</td>
+            </tr>
+            <tr>
+              <td><img src="icon/birthday.jpg" width="60px" height="60px"></td><td>&nbsp;&nbsp;&nbsp;<input type="date" name="date" ></td>
+            </tr>
+            <tr>
+              <td><img src="icon/log.jpg" width="60px" height="60px"></td><td>&nbsp;&nbsp;<input type="text" name="id" maxlength="40" required class="reg_input" placeholder="&nbsp;帳號"></td>
+            </tr>
+            <tr>
+              <td><img src="icon/key.jpg" width="60px" height="60px"></td><td>&nbsp;&nbsp;<input type="password" name="pwd" maxlength="40" required class="reg_input" placeholder="&nbsp;密碼"></td>
+            </tr>
+            <tr>
+              <td><img src="icon/check.jpg" width="60px" height="60px"></td><td>&nbsp;&nbsp;<input type="password" name="pwd2" maxlength="40" required class="reg_input" placeholder="&nbsp;密碼確認"></td>
+            </tr>
+            <tr>
+              <td><img src="icon/email.jpg" width="60px" height="60px"></td><td>&nbsp;&nbsp;<input type="email" name="email" maxlength="40" required class="reg_input" placeholder="&nbsp;信箱"></td>
+            </tr>
+            <tr>
+              <td><img src="icon/address.jpg" width="60px" height="60px"></td><td>&nbsp;&nbsp;<input type="text" name="address" maxlength="40" required class="reg_input" placeholder="&nbsp;地址"></td>
+            </tr>
+            <tr>
+              <td><img src="icon/phone.jpg" width="60px" height="60px"></td><td>&nbsp;&nbsp;<input type="text" name="phone" maxlength="40" required class="reg_input" placeholder="&nbsp;電話"></td>
+            </tr>
+            <tr>
+              <td><img src="icon/agree.png" width="60px" height="60px"></td><td colspan="2" ><input type="radio" name="agree" required>我同意使用貨到付款</td>
+            </tr>
+            <tr>
+              <td colspan="2" class=""><input type="submit" name="" value="會員註冊" class="login_btn">
+              <a href="index.jsp"><input type="button" name="" value="取消"  class="login_btn"></a></td>
+            </tr>
+            
+            
+          </table>
+        </form>
+</center> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div id="sidebar_right"></div>
+    <div id="clear"></div>
+<footer class="loginposition"> 
+  <p class="footword"><img class="comp2" src="pic/mark.jpg">
+  聯絡我們|關於我們|使用條款<br>
+  客服專線:0800-000-123<br>
+  地址: 320桃園市中壢區中北路200號
+ </p>
+</footer>
+</body>
+</html>
